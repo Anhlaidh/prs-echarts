@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://47.94.224.197:3306/station?serverTimezone=UTC&userUnicode=true@charaterEncoding=utf-8
+  mvc:
+    static-path-pattern: /**
+thymeleaf:
+  #清除缓存
+  cache: false
+  mode: LEGACYHTML5 #非严格模式
+  prefix: /WEB-INF/ #默认 classpath:/templates/
+  suffix: .html
+  servlet:
+    content-type: text/html
