@@ -21,10 +21,8 @@ import java.util.List;
 public class EchartsController {
     @Autowired
     StationInfoMapper mapper;
-    @RequestMapping(value = "example",method = RequestMethod.GET)
+    @RequestMapping(value = "index",method = RequestMethod.GET)
     public String example() {
-
-
 
         return "index";
     }
