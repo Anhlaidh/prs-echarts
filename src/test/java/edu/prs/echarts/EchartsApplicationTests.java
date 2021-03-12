@@ -21,8 +21,8 @@ class EchartsApplicationTests {
     void contextLoads() throws SQLException {
         System.out.println(dataSource);
         System.out.println(dataSource.getConnection());
-        mapper.selectByPrimaryKey(15);
-        System.out.println("a");
+        StationInfo stationInfo = mapper.selectByPrimaryKey(15);
+        System.out.println(stationInfo);
     }
 
 }

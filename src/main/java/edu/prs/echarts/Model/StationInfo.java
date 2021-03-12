@@ -1,8 +1,13 @@
 package edu.prs.echarts.Model;
 
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
+/**
+ * @author Anhlaidh
+ */
 @Component
+@Data
 public class StationInfo {
     private Integer id;
 
@@ -72,5 +77,19 @@ public class StationInfo {
 
     public void setDetail(String detail) {
         this.detail = detail == null ? null : detail.trim();
+
+    }
+
+    @Override
+    public String toString() {
+        return "StationInfo{" +
+                "id=" + id +
+                ", salary='" + salary + '\'' +
+                ", url='" + url + '\'' +
+                ", name='" + name + '\'' +
+                ", company='" + company + '\'' +
+                ", position='" + position + '\'' +
+                ", detail='" + detail + '\'' +
+                '}';
     }
 }
