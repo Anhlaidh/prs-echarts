@@ -26,7 +26,7 @@ public class EchartsController {
 
 
 
-        return "/index";
+        return "index";
     }
 
     @RequestMapping("rest")

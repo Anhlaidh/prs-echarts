@@ -1,7 +1,9 @@
 package edu.prs.echarts.Mapper;
 
 import edu.prs.echarts.Model.StationInfo;
+import org.springframework.stereotype.Component;
 
+@Component
 public interface StationInfoMapper {
     int deleteByPrimaryKey(Integer id);
 
