@@ -14,3 +14,10 @@ thymeleaf:
   suffix: .html
   servlet:
     content-type: text/html
+server:
+  port: 8888
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: edu.prs.echarts.Mapper
+  configuration:
+    map-underscore-to-camel-case: true
