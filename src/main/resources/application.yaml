@@ -14,3 +14,5 @@ thymeleaf:
   suffix: .html
   servlet:
     content-type: text/html
+server:
+  port: 8888
